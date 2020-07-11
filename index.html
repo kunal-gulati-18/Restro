@@ -1,0 +1,374 @@
+<!Doctype html>
+<html>
+    <head>
+
+        <title>Restaurant Website</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="css/bootstrap.min.css"> 
+        <link rel="stylesheet" href="css/aos.css"> 
+        
+
+        <link rel="stylesheet" href="css/main.css">
+        
+        <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+        <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+        <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+        <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+        <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+
+        <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+        <link rel="stylesheet" type="text/css" href="css/util.css">
+	    <link rel="stylesheet" type="text/css" href="css/form.css">
+         <!-- jQuery library -->
+        <script src="js/jquery.min.js"></script>
+
+
+
+<!-- Latest compiled JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/ajax-utils.js"></script>    
+        <script src="js/script.js"></script>
+        <script src="js/aos.js"></script>
+
+    </head>
+
+ <body>
+<header>
+    
+<nav id="header-nav" class="navbar navbar-default">
+ <div class="container">
+<div class="navbar-header">
+<a href="index.html" class="pull-left visible-md visible-lg">
+<div id="logo-img" alt="logo image">
+    </div>
+ </a>  
+ <div class="navbar-brand"><!--use for branding like name of company ke liye we use it-->
+ <a href="index.html" class="">
+<h1>RESTRO</h1>
+  
+ </a>  
+ </div>
+ 
+  <!-- Toggler/collapsibe Button -->
+   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false" id="navbarToggle">
+        <span class="sr-only">Toggle navigation</span>
+        <!--vo jo teen dande aate hai unke liye-->
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+</div>
+<div id="collapsable-nav" class="collapse navbar-collapse">
+<ul id="nav-list" class="nav navbar-nav navbar-right">
+     
+     <li class="active" id="navhomebutton">
+      <a href="index.html">
+          <span class="glyphicon glyphicon-home">
+
+          </span><br class="hidden-xs">
+          
+          Home</a>
+    </li>
+     
+     <li class="nav-item" id="navmenubutton">
+      <a class="menu-categories.html" onclick="$dc.loadMenuCategories()" id="menu-anchor">
+          <span class="glyphicon glyphicon-cutlery">
+
+          </span><br class="hidden-xs">
+          
+          Menu</a>
+    </li>
+
+     <li class="nav-item" id="navaboutbutton">
+      <a class="menu-categories.html" onclick="$dc.loadaboutpage()">
+          <span class="glyphicon glyphicon-info-sign">
+
+          </span><br class="hidden-xs">
+          
+          About</a>
+    </li>
+
+     
+     <li id="phone" class="hidden-xs">
+      <a href="tel:8700519840">
+          <span class="glyphicon glyphicon-earphone">
+                
+          </span>8700519840</a><div>*We deliver</div>
+    </li>
+  </ul>
+</div>    
+
+</div>
+</nav>
+</header>
+
+<!--move to top button-->
+<button onclick="topFunction()" id="myBtn" title="Go to top"><span class="glyphicon glyphicon-arrow-up"></span></button>
+<div class="loader">
+  <div class="loading">
+  </div>
+</div>
+
+<div id="phone-content" class="container visible-xs">
+<div class="jumbotron" id="jumbo">
+ <a href="tel:8700519840">
+          <span class="glyphicon glyphicon-earphone">
+              
+          </span>8700519840</a><div style="color:black;"></div>
+          *We deliver
+</div>
+</div>
+
+<div id="main-content">
+
+
+<!--<div class="jumbotron" >
+<img src="images/restaurant1.jpg" alt="Picture of restaurant" class="img-responsive visible-xs">
+
+
+</div>
+
+<div class="row" id="home-tiles">
+<div class="col-md-4 col-sm-6 col-xs-12">
+
+    <a onclick="spinnerfunc2()"><div id="menu-tile" data-aos="fade-left visible-sm"><span>menu</span></div></a>
+</div>
+<div class="col-md-4 col-sm-6 col-xs-12 ">
+<a onclick="spinnerfunc3()"><div id="specials-tile" data-aos="fade-right visible-sm"><span>specials</span></div></a>
+    
+</div>
+<div class="col-md-4 col-sm-12 col-xs-12">
+    <a href="https://goo.gl/maps/VPBV86f9D9bDER8L6" target="_blank">
+             <div id="map-tile" data-aos="fade-left visible-sm">
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.1343678862504!2d77.25775421399204!3d28.535680695210907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3df7d51daa5%3A0x9f71143ef2f4e89f!2sGulati%20Book%20Depot!5e0!3m2!1sen!2sin!4v1592379999496!5m2!1sen!2sin" width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+           
+                   <span>Map</span>
+            </div>
+
+    </a>
+</div>
+</div>-->
+
+</div><!--end container-->
+
+
+
+<footer class="panel-footer">
+    <div class="container">
+    <div class="row">
+    <section id="hours" class=" col-sm-4">
+    <span>Hours:</span><br>
+    Sun-Thurs:11:15am - 10:00pm<br>
+    Fri: 11:15am - 2:30pm<br>
+    Saturday Closed
+    <hr class="visible-xs">
+    </section>
+    
+    <section id="address" class="col-sm-4">
+    <span>Address</span><br>
+    31 rampuri kalkaji
+    <p>* Delivery area withing 3-4 miles with a minimum order of Rs 200</p>
+    <hr class="visible-xs">
+    </section>
+    
+    <section id="testimonials" class="col-sm-4">
+    <p>"The best food ate till date."</p>
+    <p>"This was something amazing."</p>
+    </section>
+    </div>
+    <div class="text-center">&copy;Copyright RESTRO</div>
+    </div>
+</footer>
+<script>
+
+    AOS.init({
+  duration: 1200
+});
+
+    </script>
+        <script>
+            //for stars
+    
+            $(document).ready(function(){
+        // Check Radio-box
+        $(".rating input:radio").attr("checked", false);
+    
+        $('.rating input').click(function () {
+            $(".rating span").removeClass('checked');
+            $(this).parent().addClass('checked');
+        });
+    
+        $('input:radio').change(
+          function(){
+            var userRating = this.value;
+           
+            
+        }); 
+    });
+        </script>
+    <script>
+
+        function resetForms() 
+        {
+            document.getElementById('form_rel').reset();
+        }
+            
+            
+        </script>
+
+    <script>
+   function spinnerfunc()
+    {
+         var name=document.getElementById("uname").value;
+        var email=document.getElementById("emails").value;
+        var radios = document.querySelectorAll('input[type="radio"]:checked');
+        
+        if(email===""||name==="")
+        {
+            return;
+
+
+        }  
+
+        if(radios.length===0)
+        {
+            return alert("Please Submit Your Feedback!!s")
+        }
+        else{
+        
+        document.getElementsByClassName("loader")[0].style.display = "block";
+        }
+
+    }
+
+   function spinnerfunc1()
+    {
+         
+        document.getElementsByClassName("loader")[0].style.display = "block";
+
+    }
+
+/*
+
+    function spinnerfunc()
+    {
+         
+        document.getElementsByClassName("loader")[0].style.display = "block";
+    
+
+       var ok=setInterval(myTimer, 2000);
+
+        function myTimer() 
+        {
+  
+            window.open("menu-categories.html","_self");
+}
+
+    }
+
+ function spinnerfunc2()
+    {
+         
+        document.getElementsByClassName("loader")[0].style.display = "block";
+    
+
+       var ok=setInterval(myTimer, 2000);
+
+        function myTimer() 
+        {
+  
+            window.open("single-category.html","_self");
+}
+
+    }
+
+     function spinnerfunc3()
+    {
+         
+        document.getElementsByClassName("loader")[0].style.display = "block";
+    
+
+       var ok=setInterval(myTimer, 2000);
+
+        function myTimer() 
+        {
+  
+            window.open("single-category.html","_self");
+}
+
+    }
+*/
+    
+        var mybutton = document.getElementById("myBtn");
+        
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+    
+
+
+
+    </script>
+<script>
+
+    function movetoback()
+    {
+        
+        spinnerfunc1();
+        var ok=setInterval(myTimer, 2000);
+
+        
+        function myTimer() 
+        {
+            
+  
+        window.open("./index.html","_self");
+        window.clearInterval(ok);
+
+        }
+
+    }
+
+    function movetoback1()
+    {
+        
+        
+        var ok=setInterval(myTimer, 2000);
+        
+        
+        function myTimer() 
+        {
+            
+            window.open($dc.loadMenuCategories(),"_self");
+            window.clearInterval(ok);
+            
+        }
+        
+
+    }
+
+    
+
+</script>    
+
+
+</body>
+
+ </html>   
